@@ -5,10 +5,10 @@ This SQL project focuses on cleaning a dataset of tech layoffs by following seve
 ## Key Steps
 
 1. **Creation of Staging Table:**
-A staging table (layoffs_staging) was created to hold a raw copy of the data. This served as a backup and ensured that the original dataset remained intact during the cleaning process.
+  A staging table (layoffs_staging) was created to hold a raw copy of the data. This served as a backup and ensured that the original dataset remained intact during the cleaning process.
 
 2. **Duplicate Removal:**
-To remove duplicates, a row numbering approach was used based on the combination of columns such as company, industry, total_laid_off, and date. Duplicate rows were identified and removed by filtering out those with row_num > 1.
+ To remove duplicates, a row numbering approach was used based on the combination of columns such as company, industry, total_laid_off, and date. Duplicate rows were identified and removed by filtering out those with row_num > 1.
 
 3. **Standardization of Data:**
 - Whitespace Removal: Leading spaces in company names were removed using the TRIM() function.
@@ -28,5 +28,5 @@ To remove duplicates, a row numbering approach was used based on the combination
 ## Outcome 
 The data was successfully cleaned, with duplicates, formatting issues, and missing values addressed. The dataset is now in a standardized and usable format, ready for further analysis and reporting on the impact of layoffs in the tech industry
 
-# Conclusion
+## Conclusion
 The data cleaning process for the tech layoffs dataset ensured that the information was accurate, consistent, and ready for exploratory data analysis (EDA). By addressing duplicates, standardizing values, and handling missing data, we have improved the dataset’s reliability for insights. This clean dataset can now be used effectively for further EDA, helping stakeholders understand trends and impacts in the tech industry layoffs
